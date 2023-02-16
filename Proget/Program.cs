@@ -17,6 +17,7 @@ namespace Proget
                 numIns = Console.ReadLine();
             }
             int divi = 0;
+
             do
             {
                 Console.Write("Dimmi una base tra 2 e 16: ");
