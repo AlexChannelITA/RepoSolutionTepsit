@@ -45,7 +45,7 @@ namespace Proget
                 res = alfa + res;
                 num = num / div;
             }
-
+            //
             Console.WriteLine($"Il risultato è pari a: {res}");
         }
     }
