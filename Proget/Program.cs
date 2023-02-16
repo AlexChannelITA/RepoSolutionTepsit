@@ -6,17 +6,30 @@ namespace Proget
     {
         static void Main(string[] args)
         {
+            
+            int num = 0;
+
             Console.Write("Dimmi un numero: ");
-            int num = Convert.ToInt32(Console.ReadLine());            
-            Console.Write("Dimmi una base: ");
-            int div = Convert.ToInt32(Console.ReadLine()); ;
+            string numIns = Console.ReadLine();
+            while(!Int32.TryParse(numIns, out num))
+            {
+                Console.Write("Dimmi un numero INTERO!!: ");
+                numIns = Console.ReadLine();
+            }
+            int divi = 0;
+            do
+            {
+                Console.Write("Dimmi una base tra 2 e 16: ");
+                divi = Convert.ToInt32(Console.ReadLine()); ;
+            } while (divi<2 || divi>16);
+
 
           
             string res = "";
 
             while(num > 0)
             {
-                int resto = num % div;
+                int resto = num % divi;
                 string alfa = "";
                 switch (resto)
                 {
@@ -43,7 +56,7 @@ namespace Proget
                         break;
                 }
                 res = alfa + res;
-                num = num / div;
+                num = num / divi;
             }
             //
             Console.WriteLine($"Il risultato è pari a: {res}");
