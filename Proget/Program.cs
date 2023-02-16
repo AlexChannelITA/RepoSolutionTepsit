@@ -9,7 +9,7 @@ namespace Proget
             Console.Write("Dimmi un numero: ");
             int num = Convert.ToInt32(Console.ReadLine());            
             Console.Write("Dimmi una base: ");
-            int div = Convert.ToInt32(Console.ReadLine());
+            int div = Convert.ToInt32(Console.ReadLine()); ;
 
           
             string res = "";
