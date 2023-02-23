@@ -16,6 +16,7 @@ namespace Proget
                 Console.Write("Dimmi un numero INTERO!!: ");
                 numIns = Console.ReadLine();
             }
+            
             int divi = 0;
 
             do
